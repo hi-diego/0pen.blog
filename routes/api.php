@@ -14,14 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::domain('{account}.0pen.blog')->group(function () {
-    Route::get('/', function ($account) {
-        return $account;
-    });
-    Route::get('user/{id}', function ($account, $id) {
-        //
-    });
-});
+// Route::domain('{account}.0pen.blog')->group(function () {
+//     Route::get('/', function ($account) {
+//         return $account;
+//     });
+//     Route::get('user/{id}', function ($account, $id) {
+//         //
+//     });
+// });
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
